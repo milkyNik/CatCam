@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="CatCam" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -703,11 +704,35 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="CatCam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="hAf-PF-z5y">
+                                <rect key="frame" x="307" y="164" width="163" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="5f3-Bd-UjQ"/>
+                                    <constraint firstAttribute="height" constant="96" id="ziJ-fF-lHx"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Pk2-Cd-6nM">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Pk2-Cd-6nM" secondAttribute="bottom" id="DkP-wu-Qw1"/>
+                            <constraint firstAttribute="trailing" secondItem="hAf-PF-z5y" secondAttribute="trailing" constant="10" id="Gxa-Lo-5xY"/>
+                            <constraint firstItem="hAf-PF-z5y" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="OQK-AL-z7d"/>
+                            <constraint firstItem="Pk2-Cd-6nM" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="deu-c8-UIM"/>
+                            <constraint firstAttribute="trailing" secondItem="Pk2-Cd-6nM" secondAttribute="trailing" id="wSB-fA-D5R"/>
+                            <constraint firstItem="Pk2-Cd-6nM" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="weR-D5-iKH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="localVideoView" destination="hAf-PF-z5y" id="nJ5-QU-aT9"/>
+                        <outlet property="remoteVideoView" destination="Pk2-Cd-6nM" id="KkB-I0-CYn"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
