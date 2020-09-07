@@ -35,10 +35,6 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-    deinit {
-        agoraKit?.leaveChannel(nil)
-    }
     
     // MARK: Agora
     
@@ -59,6 +55,12 @@ class ViewController: NSViewController {
         videoCanvas.renderMode = .hidden
         // Set the local video view.
         agoraKit?.setupLocalVideo(videoCanvas)
+    }
+    
+    @IBAction func stopAction(_ sender: Any) {
+        agoraKit?.setupLocalVideo(nil)
+        agoraKit?.leaveChannel(nil)
+        agoraKit?.stopPreview()
     }
     
     func joinChannel() {
