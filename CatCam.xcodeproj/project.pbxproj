@@ -11,9 +11,11 @@
 		2028AB012506D97600C4C4CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028AB002506D97600C4C4CA /* ViewController.swift */; };
 		2028AB032506D97B00C4C4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2028AB022506D97B00C4C4CA /* Assets.xcassets */; };
 		2028AB062506D97B00C4C4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2028AB042506D97B00C4C4CA /* Main.storyboard */; };
+		7BF9FF69B632424BCB926FC5 /* Pods_CatCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2833C3C2E5CC056E700E7BBB /* Pods_CatCam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16C51BBB48D5773200E9189E /* Pods-CatCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatCam.release.xcconfig"; path = "Target Support Files/Pods-CatCam/Pods-CatCam.release.xcconfig"; sourceTree = "<group>"; };
 		2028AAFB2506D97600C4C4CA /* CatCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2028AAFE2506D97600C4C4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2028AB002506D97600C4C4CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +23,8 @@
 		2028AB052506D97B00C4C4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2028AB072506D97B00C4C4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2028AB082506D97B00C4C4CA /* CatCam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CatCam.entitlements; sourceTree = "<group>"; };
+		2833C3C2E5CC056E700E7BBB /* Pods_CatCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45834700836D915655F01823 /* Pods-CatCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatCam.debug.xcconfig"; path = "Target Support Files/Pods-CatCam/Pods-CatCam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF9FF69B632424BCB926FC5 /* Pods_CatCam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +44,8 @@
 			children = (
 				2028AAFD2506D97600C4C4CA /* CatCam */,
 				2028AAFC2506D97600C4C4CA /* Products */,
+				9854CAE0FA446385B93D72BF /* Pods */,
+				254006E25DC5462026A34649 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +70,24 @@
 			path = CatCam;
 			sourceTree = "<group>";
 		};
+		254006E25DC5462026A34649 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2833C3C2E5CC056E700E7BBB /* Pods_CatCam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9854CAE0FA446385B93D72BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45834700836D915655F01823 /* Pods-CatCam.debug.xcconfig */,
+				16C51BBB48D5773200E9189E /* Pods-CatCam.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2028AB0B2506D97B00C4C4CA /* Build configuration list for PBXNativeTarget "CatCam" */;
 			buildPhases = (
+				C5B96ED513D04FE72B03FF02 /* [CP] Check Pods Manifest.lock */,
 				2028AAF72506D97600C4C4CA /* Sources */,
 				2028AAF82506D97600C4C4CA /* Frameworks */,
 				2028AAF92506D97600C4C4CA /* Resources */,
+				055ED0E4DD3661741EDBEBD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		055ED0E4DD3661741EDBEBD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatCam/Pods-CatCam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatCam/Pods-CatCam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatCam/Pods-CatCam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B96ED513D04FE72B03FF02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatCam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2028AAF72506D97600C4C4CA /* Sources */ = {
@@ -267,6 +336,7 @@
 		};
 		2028AB0C2506D97B00C4C4CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45834700836D915655F01823 /* Pods-CatCam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CatCam/CatCam.entitlements;
@@ -287,6 +357,7 @@
 		};
 		2028AB0D2506D97B00C4C4CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C51BBB48D5773200E9189E /* Pods-CatCam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CatCam/CatCam.entitlements;

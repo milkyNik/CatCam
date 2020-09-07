@@ -1,0 +1,16 @@
+PODS:
+  - AgoraRtcEngine_macOS (3.1.1)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_macOS
+
+SPEC REPOS:
+  trunk:
+    - AgoraRtcEngine_macOS
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_macOS: fcf1b2d6a4f92ccf78a2e22c7de3f17227e26fdf
+
+PODFILE CHECKSUM: e2a02e60e0076e50b0cfc8aefd93a5e990cafe44
+
+COCOAPODS: 1.9.1
