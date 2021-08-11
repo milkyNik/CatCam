@@ -9,6 +9,7 @@
 import Cocoa
 import AgoraRtcKit
 
+/// Test comment
 class ViewController: NSViewController {
 
     @IBOutlet weak var remoteVideoView: NSView!
